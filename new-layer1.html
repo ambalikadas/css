@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<body>
+<div class="col-12 col-s-12 header">
+<ul>
+<li class="inline"><img class="logo" src="left-top-logo.png"></li>
+<li class="inline">
+<strong class="str">Header</strong>
+<ul class="ml">
+<li class="inline">Topic-1</li>
+<li class="inline">Topic-2</li>
+<li class="inline">Topic-3</li>
+<li class="inline">Topic-4</li>
+</ul>
+</li>
+<li class="inline search"><input type="text" value="Search"><img class="imgtag" src="search-button.png"></li>
+</ul>
+</div>
+
+<div class="row">
+<div class="col-2 col-s-3 menu">
+<ul class="menu">
+<li class="menu1"><img class="gtm" src="gtm.jpg"></li>
+<li class="menu1">Alliance Home</li>
+<li class="menu1">Map</li>
+<li class="menu1">America</li>
+<li class="menu1">Emeia</li>
+<li class="menu1">Asia-Pacific</li>
+<li class="menu1">Japan</li>
+</ul>
+</div>
+
+
+<div class="col-8 col-s-9 Body">
+<p><img class="bdimg" src="images.jpg"></p>
+
+<button class="collapsible active">Latest News</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="collapsible">Latest Announcements</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="collapsible">Latest Documents</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="collapsible">Latest Videos</button>
+<div class="content">
+<ul>
+<li>15/2/20</li>
+<li>15/2/20</li>
+<li>15/2/20</li>
+<li>15/2/20</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="col-2 col-s-12 Right-bar">
+<ul class="menu">
+<li class="menu1"><img class="gtm" src="gtm.jpg"></li>
+<li class="menu1">Alliance Home</li>
+<li class="menu1">Map</li>
+<li class="menu1">America</li>
+<li class="menu1">Emeia</li>
+<li class="menu1">Asia-Pacific</li>
+<li class="menu1">Japan</li>
+</ul>
+</div>
+
+</div>
+
+<div class="col-12 col-s-12 footer">
+<p>jkyuyuh</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+
+</html>
